@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form Project</title>
+
+    <link rel="stylesheet" href="./style.css"/>
+
+  </head>
+  <body>
+    <h1 id="title">Contactame y unete a nuestro Equipo</h1>
+
+    <p id="description">Formulario de contacto y experiencia</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"> Nombre Completo <input id="name" type="text" placeholder="Jesus Hernandez" required /> </label>
+        <label id="email-label" for="email"> Correo Electronico<input type="email" id="email" placeholder="jjesusfhernandezc@gmail.com" required/></label>
+        <label id="number-label" for="number"> Introduce tu Edad<input id="number" type="number" placeholder="24" max="26" min="18"/></label>
+      </fieldset> 
+      
+      <fieldset>
+        <label>Escoge tu campo especializado<select id="dropdown">
+            <option selected>Frontend developer</option>
+            <option>Backend developer</option>
+            <option>Fullstack Developer</option>
+        </select></label>
+            
+      </fieldset>
+
+      <fieldset class="multiple">
+        <legend>Cuantas horas puedes trabajar al dia</legend>
+        <label><input type="radio" class="inline" name="opciones" value="8"/> 8 horas</label>
+        <label><input type="radio" class="inline" name="opciones"/ value="6">6 horas</label>
+        <label><input type="radio" class="inline" name="opciones" value="4"/>4 horas</label>
+      </fieldset>
+
+      <fieldset class="multiple">
+            <legend>Cual es tu interes favorito</legend>
+            <label for="loving"><input type="checkbox" class="inline" value="desing" checked>Responsive Desing</label>
+            <label for="lazy"><input  type="checkbox" class="inline" value="logic">Logic of the Web App</label>
+            <label for="volleyball"><input id="energetic" class="inline" type="checkbox" name="personality" value="databases">Databases</label>
+      </fieldset>
+
+      <label> Presentate con el equipo <textarea id="text-area" name="text-area" rows="4" cols="50"></textarea></label>
+
+      <input type="submit" value="Submit" id="submit"/>
+
+    </form>
+
+
+  </body>
+</html> 
